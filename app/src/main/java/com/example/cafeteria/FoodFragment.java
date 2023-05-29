@@ -200,7 +200,6 @@ public class FoodFragment extends Fragment implements ListPedidoAdapter.OnItemCl
                 if(response.isEmpty()){
                     recuperarVentas(UrlPedidos);
                     listAdapter.notifyDataSetChanged();
-                    Toast.makeText(getContext(),"si se modifico",Toast.LENGTH_SHORT).show();
                 }else {
                     Toast.makeText(getContext(),response,Toast.LENGTH_SHORT).show();
                 }

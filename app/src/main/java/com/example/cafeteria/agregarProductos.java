@@ -227,7 +227,7 @@ public class agregarProductos extends Fragment {
             public void onResponse(String response) {
                 Log.i(TAG, response);
                 if(response.isEmpty()){
-                    Toast.makeText(getContext(),response,Toast.LENGTH_SHORT).show();
+                    //Toast.makeText(getContext(),response,Toast.LENGTH_SHORT).show();
                     //Toast.makeText(getContext(), "Modificado", Toast.LENGTH_SHORT).show();
                     homeFragment home = new homeFragment();
                     FragmentTransaction transaction = requireActivity().getSupportFragmentManager().beginTransaction();
@@ -235,7 +235,7 @@ public class agregarProductos extends Fragment {
                     transaction.addToBackStack(null);
                     transaction.commit();
                 }else {
-                    Toast.makeText(getContext(),response,Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getContext(),"Error en la modificación",Toast.LENGTH_SHORT).show();
                 }
             }
         }, new Response.ErrorListener() {

@@ -73,7 +73,7 @@ public class homeFragment extends Fragment implements ListAdapter.OnItemClickLis
 
     @Override
     public void onItemClick(int id) {
-        Toast.makeText(getContext(),"botonEliminar: ",Toast.LENGTH_SHORT).show();
+        //Toast.makeText(getContext(),"botonEliminar: ",Toast.LENGTH_SHORT).show();
     }
 
     public homeFragment() {
