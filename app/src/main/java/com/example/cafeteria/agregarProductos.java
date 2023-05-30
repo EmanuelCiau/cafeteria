@@ -173,7 +173,7 @@ public class agregarProductos extends Fragment {
                 parametros.put("precio_unidad",precio_unidad.getText().toString());
                 parametros.put("cantidad",cantidad.getText().toString());
                 parametros.put("categoria",categoria);
-                parametros.put("imagen", "null");
+                //parametros.put("imagen", null);
                 return parametros;
             }
         };
@@ -254,7 +254,7 @@ public class agregarProductos extends Fragment {
                 parametros.put("precio_unidad",precio_unidad.getText().toString());
                 parametros.put("cantidad",cantidad.getText().toString());
                 parametros.put("categoria",categoria);
-                parametros.put("imagen", null);
+                //parametros.put("imagen", null);
                 return parametros;
             }
         };
